@@ -57,5 +57,6 @@ eval $run_command ; rc=$?
 
 echo "status=${rc}" >> $GITHUB_OUTPUT
 echo "uuid=${uuid}" >> $GITHUB_OUTPUT
+echo "uuid=${uuid}" >> $GITHUB_STEP_SUMMARY
 
 PYTHONPATH=/tmp/utils python -m piperider_cli.recipes.github_action attach_comment
