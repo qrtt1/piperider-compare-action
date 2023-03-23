@@ -29,6 +29,11 @@ inputs:
     description: 'The API token to use for the cloud API'
     required: false
 
+outputs:
+  status:
+    description: status of PipeRider exit code
+  uuid:
+    description: uuid of the repository
 
 runs:
   using: 'docker'
