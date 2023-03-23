@@ -55,7 +55,7 @@ echo "will execute => $run_command"
 
 eval $run_command ; rc=$?
 
-echo "status=${rc}" >> $GITHUB_ENV
-echo "uuid=${uuid}" >> $GITHUB_ENV
+echo "status=${rc}" >> $GITHUB_OUTPUT
+echo "uuid=${uuid}" >> $GITHUB_OUTPUT
 
 PYTHONPATH=/tmp/utils python -m piperider_cli.recipes.github_action attach_comment
