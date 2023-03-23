@@ -31,9 +31,9 @@ inputs:
 
 outputs:
   status:
-    description: status of PipeRider exit code
+    description: 'The exit code status of the PipeRider comparison. This indicates whether the comparison was successful or not.'
   uuid:
-    description: uuid of the repository
+    description: 'The UUID of the repository that was compared.'
 
 runs:
   using: 'docker'
